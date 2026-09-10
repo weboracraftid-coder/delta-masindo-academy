@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // Memberitahu Next.js untuk menghasilkan Static HTML/CSS/JS (SSG)
+  output: 'export',
   images: {
-    unoptimized: true, // Wajib diaktifkan jika menggunakan next/image pada mode SSG
+    unoptimized: true,
   },
   eslint: {
     ignoreDuringBuilds: true,
   },
 };
 
-module.exports = nextConfig;
+// GANTI module.exports = nextConfig; MENJADI:
+export default nextConfig;
